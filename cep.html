@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Consulta de CEP</title>
+    
 </head>
-<body>
-    <h1>Consulta de CEP</h1>
+<body background="Design sem nome.png">
+<div class="box1">
+    <a href="https://www.correios.com.br/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Correios_%281990%29.svg/1280px-Correios_%281990%29.svg.png" alt="logo">
+    </a>
+</div>
+
+<div class="box">
+    <h1 class="titulo">Consulta de CEP</h1>
+    <hr>
+    <br>
     <label for="cepInput">Digite o CEP:</label>
     <input type="text" id="cepInput">
-    <button onclick="buscarEndereco()">Buscar</button>
+    <button onclick="buscarEndereco()">Buscar</button> <br>
     <div id="endereco"></div>
-
+</div>
     <script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;
